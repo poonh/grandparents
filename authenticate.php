@@ -9,7 +9,7 @@ if (isset($_POST['password'])) {
     // Check if the submitted password matches the expected password
     if ($password == $expectedPassword) {
         // Password is correct, redirect to the protected page
-        header("Location: pictures.html");
+        header("Location: picturesecret.html");
         exit;
     } else {
         // Password is incorrect, display an error message
