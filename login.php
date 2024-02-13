@@ -1,5 +1,5 @@
 <?php
-$password = "your_password_here"; // Set your desired password here
+$password = "chenling"; // Set your desired password here
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $entered_password = $_POST["password"];
