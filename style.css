@@ -1,12 +1,9 @@
-/* In your CSS file or style tag */
-.container {
-    max-width: 800px; /* Set a maximum width for the container */
+.text-container {
+    max-width: 800px; /* Set a maximum width for the text container */
     margin: 0 auto; /* Center the container horizontally */
 }
 
-/* Optionally, you can set the width of specific text elements */
-p, h1, h2, h3, h4, h5, h6 {
-    max-width: 100%; /* Allow headings and paragraphs to take full width within the container */
+.text-container p {
     margin-right: auto; /* Align text to the left within the container */
     margin-left: auto; /* Align text to the left within the container */
 }
