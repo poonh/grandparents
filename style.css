@@ -68,13 +68,13 @@ footer {
 .menu-icon {
     width: 30px;
     height: 30px;
-    background-color: #333;
+    background-color: lightgreen;
     cursor: pointer;
 }
 
 .mobile-menu-list {
     display: none;
-    background-color: #333;
+    background-color: lightgreen;
 }
 
 .mobile-menu-list li {
