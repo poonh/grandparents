@@ -6,6 +6,10 @@
     flex: 50%;
 }
 
+.column wide{
+    flex: 50%;
+}
+
 .image {
     position: relative;
     margin: 10px;
@@ -29,7 +33,8 @@
 /*    background-color: rgba(0, 0, 0, 0.5);
     color: white;*/
     padding: 10px;
-    text-align: center;
+/*    padding-left: 60px;*/
+    text-align: left;
     margin-top: 10px; /* Add margin-top to create space between image and description */
     width: 100%; /*
 }
