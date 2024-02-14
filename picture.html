@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外公外婆紀念網站</title>
+    <link rel="stylesheet" type="text/css" href="style_m.css">
+    <link rel="stylesheet" href="image.css">
+
+<style>
+  /* Additional CSS for enlarged images */
+  .enlarged-image {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+  
+  .enlarged-image img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 5%;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                   <li><a href="https://poonh.github.io/grandparents/index.html">網站簡介</a></li>
+                   <li><a href="grandparents.html">外公外婆的故事</a></li>
+	           <li><a href="picture.html">老照片</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <div class="menu-icon"></div>
+                <ul class="mobile-menu-list">
+                   <li><a href="https://poonh.github.io/grandparents/index.html">網站簡介</a></li>
+                   <li><a href="grandparents.html">外公外婆的故事</a></li>
+	           <li><a href="picture.html">老照片</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Your content goes here -->
+     <h1>老照片</h1>
+
+    <div class="container">
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/profle_50.jpg')">
+            <img src="pictures/profle_50.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外公約40多至50多歲時</div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/profile_60.jpg')">
+            <img src="pictures/profile_60.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外公約60多歲時</div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/grandma_he.jpg')">
+            <img src="pictures/grandma_he.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">何金外婆</div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/grandma_guo.jpg')">
+            <img src="pictures/grandma_guo.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">郭妹外婆</div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/with_friend.jpg')">
+            <img src="pictures/with_friend.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外公和同事</div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/with_son_1958_副本.jpg')">
+            <img src="pictures/with_son_1958_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外公和子女（40多歲，攝於五六十年代）</div>
+      </div>
+    </div>
+<!--  </div>-->
+
+    <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/family_1960_副本.jpg')">
+            <img src="pictures/family_1960_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">約1960年家庭照</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/whole_family_1970_副本.jpg')">
+            <img src="pictures/whole_family_1970_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">約1970年家庭照，當時晚飯後外公提議一起去拍照</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/cousin_n_gm_1970_副本.jpg')">
+            <img src="pictures/cousin_n_gm_1970_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">約1970年外婆和孫子</div>
+      </div>
+    </div>
+
+       <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/parents_wedding_副本.jpg')">
+            <img src="pictures/parents_wedding_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">1977年子女婚禮</div>
+      </div>
+    </div>
+
+
+     <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/parkcousin_副本.jpg')">
+            <img src="pictures/parkcousin_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">約1980年和孫子們</div>
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/grandson_1month_副本.jpg')">
+            <img src="pictures/grandson_1month_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外婆和剛滿月的孫子（1980年)</div>
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/home2_副本.jpg')">
+            <img src="pictures/home2_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">1994年1月1日80大壽家裡當日</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/all_副本.jpg')">
+            <img src="pictures/all_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">80大壽和子孫合照</div>
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/birthday_dinner_副本.jpg')">
+            <img src="pictures/birthday_dinner_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">80大壽</div>
+      </div>
+    </div>
+
+      <div class="container">
+      <div class="column wide">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/ping_wedding_1995_副本.jpg')">
+            <img src="pictures/ping_wedding_1995_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">1995年參加婚禮，外公外婆分別81及74歲</div>
+      </div>
+    </div>
+
+   <div class="container">
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/grandma_fan1_副本.jpg')">
+            <img src="pictures/grandma_fan1_副本.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外婆的粉紅色羽毛扇子</div>
+      </div>
+      <div class="column">
+        <div class="image">
+          <a href="#" onclick="showEnlarged('pictures/grandma_fan2.jpg')">
+            <img src="pictures/grandma_fan2.jpg" alt="Image 1">
+          </a>
+        </div>
+        <div class="description">外婆的粉紅色羽毛扇子</div>
+      </div>
+    </div>
+      
+<!--</div>-->
+
+
+
+  <!-- Enlarged Image Container -->
+  <div class="enlarged-image" id="enlargedContainer" onclick="hideEnlarged()">
+    <span onclick="hideEnlarged()" class="close">&#x2715;</span>
+    <img src="" id="enlargedImg">
+  </div>
+
+  <script>
+    // JavaScript functions to show and hide enlarged images
+    function showEnlarged(imageSrc) {
+      var enlargedImg = document.getElementById('enlargedImg');
+      enlargedImg.src = imageSrc;
+      document.getElementById('enlargedContainer').style.display = 'block';
+    }
+
+    function hideEnlarged() {
+      document.getElementById('enlargedContainer').style.display = 'none';
+    }
+  </script>
+
+   
+	
+    </main>
+
+    <footer>
+        <!-- Removed the footer content -->
+    </footer>
+</body>
+</html>
