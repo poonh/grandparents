@@ -68,13 +68,15 @@ footer {
 .menu-icon {
     width: 30px;
     height: 30px;
-    background-color: lightgreen;
+    /*    background-color: lightgreen;*/
+    background-image: url('pictures/lightgreen.jpg')
     cursor: pointer;
 }
 
 .mobile-menu-list {
     display: none;
-    background-color: lightgreen;
+/*    background-color: lightgreen;*/
+    background-image: url('pictures/lightgreen.jpg')
 }
 
 .mobile-menu-list li {
