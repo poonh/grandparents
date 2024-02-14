@@ -15,13 +15,7 @@ body {
 }
 
 
-.container main {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Adjusted to center items horizontally */
-    padding: 10px;
-    max-width: 600px
-}
+
 .text-right {
             text-align: right;
         }
@@ -84,6 +78,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+     header {
+        background-image: url('pictures/main_bkg.png'); /* Set the background image */
+        background-color: #333; /* Fallback color */
+    }
     .menu {
         display: none;
     }
