@@ -79,6 +79,7 @@ footer {
             border-right: 1px solid #ccc; /* Adjust as needed */
             z-index: 1000; /* Ensure it's above other content */
             flex-direction: column; /* Display items vertically */
+            transition: width 2s;
         }
 
         .mobile-menu-list.active {
@@ -93,14 +94,13 @@ footer {
             margin-left: 10px; /* Adjust margin as needed */
         }
 
-      .menu-icon {
-        display: inline-block;
-        margin-left: 50px; /* Pushes the three bars to the far right */
-        margin-right: 10px; /* Adjust margin as needed */
-        cursor: pointer;
-    }
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
         .mobile-menu-list li {
-            display: block; /* Display list items vertically */
+            display: block; /* Display list items vertically */a
         }
 
    @media only screen and (max-width: 768px) {
@@ -121,11 +121,9 @@ footer {
     }
 
     .menu-icon {
-        display: inline-block;
-        margin-left: auto; /* Pushes the three bars to the far right */
-        margin-right: 10px; /* Adjust margin as needed */
+        margin-left: 250px
+
+
         cursor: pointer;
     }
 }
-
-
