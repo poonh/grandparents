@@ -14,23 +14,25 @@
             cursor: pointer;
         }
 
-        .mobile-menu-list {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
-            padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-        }
+.mobile-menu-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -60%; /* Initial position outside of the screen */
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust as needed */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    flex-direction: column; /* Display items vertically */
+    transition: left 0.5s ease; /* Apply transition */
+}
 
-        .mobile-menu-list.active {
-            display: block;
-        }
+.mobile-menu-list.active {
+    left: 0; /* Move the menu to the left edge */
+}
+
 
         .mobile-menu {
             display: none;
