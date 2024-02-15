@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>外公外婆紀念網站</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="2f422.css">
     <style>
         /* Add your custom styles here */
+        .mobile-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .menu-icon {
             display: inline-block;
             cursor: pointer;
@@ -14,6 +21,15 @@
 
         .mobile-menu-list {
             display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 80%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
         }
 
         .mobile-menu-list.active {
@@ -35,12 +51,12 @@
             </nav>
 
             <div class="mobile-menu">
-                <div class="menu-icon" onclick="toggleMobileMenu()">Menu</div>
-                <div class="menu-icon">&#9776;</div> <!-- Three horizontal lines -->
+                <div class="menu-icon">Menu</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <ul class="mobile-menu-list">
-                    <li><a href="https://poonh.github.io/grandparents/index.html">網站簡介</a></li>
-                    <li><a href="grandparents.html">外公外婆的故事</a></li>
-                    <li><a href="picture.html">老照片</a></li>
+                    <li><a href="https://poonh.github.io/grandparents/index.html" onclick="hideMobileMenu()">網站簡介</a></li>
+                    <li><a href="grandparents.html" onclick="hideMobileMenu()">外公外婆的故事</a></li>
+                    <li><a href="picture.html" onclick="hideMobileMenu()">老照片</a></li>
                 </ul>
             </div>
         </div>
@@ -64,6 +80,11 @@
         function toggleMobileMenu() {
             var menuList = document.querySelector('.mobile-menu-list');
             menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
         }
     </script>
 </body>
