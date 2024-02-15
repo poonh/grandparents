@@ -10,7 +10,7 @@
         /* Add your custom styles here */
 
         .menu-icon {
-            display: inline-block;
+            display: none;
             cursor: pointer;
         }
 
@@ -33,9 +33,7 @@
         }
 
         .mobile-menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: none;
         }
 
         .menu-title {
@@ -49,6 +47,19 @@
 
         .mobile-menu-list li {
             display: block; /* Display list items vertically */
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: inline-block;
+            }
+
+            .mobile-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 10px;
+            }
         }
     </style>
 </head>
