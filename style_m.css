@@ -61,40 +61,71 @@ footer {
 }
 
 /* Mobile menu styles */
-.mobile-menu {
-    display: none;
-}
 
-.menu-icon {
-    width: 30px;
-    height: 30px;
-    background-color: #333;
-    cursor: pointer;
-}
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
 
-.mobile-menu-list {
-    display: none;
-    background-color: #333;
-}
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+        }
 
-.mobile-menu-list li {
-    padding: 10px;
-}
+        .mobile-menu-list.active {
+            display: block;
+        }
 
-@media (max-width: 768px) {
-     header {
-        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
-        background-color: lightgreen; /* Fallback color */
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+      .menu-icon {
+        display: inline-block;
+        margin-left: 50px; /* Pushes the three bars to the far right */
+        margin-right: 10px; /* Adjust margin as needed */
+        cursor: pointer;
     }
-    .menu {
-        display: none;
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */
+        }
+
+   @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
     }
 
     .mobile-menu {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
     }
 
-    .mobile-menu-list {
-        display: block;
+     .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+
+    .menu-icon {
+        display: inline-block;
+        margin-left: auto; /* Pushes the three bars to the far right */
+        margin-right: 10px; /* Adjust margin as needed */
+        cursor: pointer;
     }
 }
+
+
