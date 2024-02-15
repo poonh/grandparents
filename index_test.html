@@ -46,16 +46,17 @@
                 </ul>
             </nav>
 
-            <div class="mobile-menu">
-                <div class="menu-icon">Menu</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <ul class="mobile-menu-list">
-                    <li><a href="https://poonh.github.io/grandparents/index.html" onclick="hideMobileMenu()">網站簡介</a></li>
-                    <li><a href="grandparents.html" onclick="hideMobileMenu()">外公外婆的故事</a></li>
-                    <li><a href="picture.html" onclick="hideMobileMenu()">老照片</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="mobile-menu">
+    <div class="menu-icon">Menu</div>
+    <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+    <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+    <ul class="mobile-menu-list">
+        <li><a href="https://poonh.github.io/grandparents/index.html" onclick="hideMobileMenu()">網站簡介</a></li>
+        <li><a href="grandparents.html" onclick="hideMobileMenu()">外公外婆的故事</a></li>
+        <li><a href="picture.html" onclick="hideMobileMenu()">老照片</a></li>
+    </ul>
+</div>
+
     </header>
 
     <main>
