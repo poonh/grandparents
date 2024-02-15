@@ -49,18 +49,27 @@
             display: block; /* Display list items vertically */
         }
 
-        @media only screen and (max-width: 768px) {
-            .menu-icon {
-                display: inline-block;
-            }
+   @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+    }
 
-            .mobile-menu {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-right: 10px;
-            }
-        }
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        order: 1; /* Moves 目錄 to the far left */
+    }
+
+    .menu-icon {
+        order: 2; /* Moves the three bars to the far right */
+    }
+}
+
     </style>
 </head>
 
