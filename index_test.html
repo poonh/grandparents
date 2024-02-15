@@ -19,7 +19,7 @@
             cursor: pointer;
         }
 
-        .mobile-menu-list {
+        .mobile-menu .mobile-menu-list {
             display: none;
             position: fixed;
             top: 0;
@@ -30,10 +30,8 @@
             padding: 20px;
             border-right: 1px solid #ccc; /* Adjust as needed */
             z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column;
+            flex-direction: column; /* Display items vertically */
         }
-
-
 
         .mobile-menu-list.active {
             display: block;
