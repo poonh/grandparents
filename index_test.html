@@ -32,6 +32,21 @@
             display: block;
         }
 
+        .mobile-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
         .mobile-menu-list li {
             display: block; /* Display list items vertically */
         }
@@ -51,7 +66,7 @@
             </nav>
 
             <div class="mobile-menu">
-                <div class="menu-icon">Menu</div>
+                <div class="menu-title">目錄</div>
                 <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
                 <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
                 <ul class="mobile-menu-list">
