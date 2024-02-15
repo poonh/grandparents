@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>外公外婆紀念網站</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
     <style>
         /* Add your custom styles here */
-
         .menu-icon {
             display: none;
             cursor: pointer;
@@ -20,58 +17,52 @@
             top: 0;
             left: 0;
             height: 100%;
-            width: 0; /* Initial width */
-            background-color: #fff; /* Adjust as needed */
+            width: 0;
+            background-color: #fff;
             padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-            transition: width 0.5s; /* Transition for width change */
+            border-right: 1px solid #ccc;
+            z-index: 1000;
+            flex-direction: column;
+            transition: width 0.5s;
         }
 
         .mobile-menu-list.active {
-            width: 60%; /* Adjust width as needed */
+            width: 60%;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu-icon {
+            margin-left: auto;
+            margin-right: 10px;
         }
 
         .mobile-menu {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-right: 10px;
-        }
-
-        .menu-title {
-            margin-right: auto; /* Pushes 目錄 to the far left */
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-left: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */
         }
 
         @media only screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
             .menu-icon {
                 display: inline-block;
             }
-
-            .menu-icon {
-                margin-left: 10px;
-                cursor: pointer;
-            }
         }
-
     </style>
 </head>
 
 <body>
 <header>
     <div class="container">
-        <!-- Removed the logo div -->
         <nav>
             <ul class="menu">
                 <li><a href="https://poonh.github.io/grandparents/index.html">網站簡介</a></li>
@@ -81,20 +72,17 @@
         </nav>
 
         <div class="mobile-menu">
-            <div class="menu-title">目錄</div>
-            <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+            <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div>
         </div>
-        <!-- Move the ul.mobile-menu-list outside the .mobile-menu div -->
-        <ul class="mobile-menu-list">
-            <li><a href="https://poonh.github.io/grandparents/index.html" onclick="hideMobileMenu()">網站簡介</a></li>
-            <li><a href="grandparents.html" onclick="hideMobileMenu()">外公外婆的故事</a></li>
-            <li><a href="picture.html" onclick="hideMobileMenu()">老照片</a></li>
-        </ul>
     </div>
+    <ul class="mobile-menu-list">
+        <li><a href="https://poonh.github.io/grandparents/index.html" onclick="hideMobileMenu()">網站簡介</a></li>
+        <li><a href="grandparents.html" onclick="hideMobileMenu()">外公外婆的故事</a></li>
+        <li><a href="picture.html" onclick="hideMobileMenu()">老照片</a></li>
+    </ul>
 </header>
 
 <main>
-    <!-- Your content goes here -->
     <h1>歡迎來到外公外婆的網站</h1>
     <p class="text-right">建站日期：2024年2月13日（年初四）</p>
     <p>此網站用來紀念我的外公外婆。他們早於2000及1999年去世。我希望把他們永久保存下來，不希望見過他們的親人都過世後就沒人知道他們，所以建站記錄。</p>
