@@ -94,8 +94,15 @@ nav{
   
      }
 
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; 
+        cursor: pointer;
+    }
 
-     
+     .menu-title {
+        margin-right: auto;  
+    }
     .menu {
      display: none;
 
