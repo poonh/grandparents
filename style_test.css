@@ -96,7 +96,7 @@ nav{
 
     .menu-icon {
         display: inline-block;
-        margin-left: auto; /*280px; */
+ /*       margin-left: 280px; */
         cursor: pointer;
     }
 
