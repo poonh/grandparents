@@ -11,49 +11,45 @@ body {
     align-items: center;
     justify-content: center; /* Adjusted to center items horizontally */
     padding: 10px;
- /*   max-width: 768px*/
+    /* max-width: 768px */
 }
 
-
-
 .text-right {
-            text-align: right;
-        }
-/* Removed the .logo styles */
+    text-align: right;
+}
 
 header {
     background-image: url('pictures/lightgreen.jpg'); /* Apply the same background image */
     background-color: #333; /* Fallback color */
     color: #000;
 }
-}
 
-nav ul, .mobile-menu-list {
+nav ul,
+.mobile-menu-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  
 }
 
-nav ul li, .mobile-menu-list li {
+nav ul li,
+.mobile-menu-list li {
     display: inline;
     margin-right: 20px;
-   
 }
 
-nav ul li a, .mobile-menu-list li a {
+nav ul li a,
+.mobile-menu-list li a {
     color: #000; /* Set the color to black */
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-
 }
 
 main {
     padding: 20px;
     max-width: 600px; /* Set a maximum width for the main content */
     margin: 0 auto;
-    margin-top: 0px
+    margin-top: 0px;
 }
 
 footer {
@@ -68,37 +64,27 @@ footer {
 .menu-icon {
     width: 30px;
     height: 30px;
-    /*    background-color: lightgreen;*/
-    background-image: url('pictures/lightgreen.jpg')
     cursor: pointer;
+    background-image: url('pictures/lightgreen.jpg');
 }
 
 .mobile-menu-list {
     display: none;
-/*    background-color: lightgreen;*/
-    background-image: url('pictures/lightgreen.jpg')
+    background-image: url('pictures/lightgreen.jpg');
 }
 
 .mobile-menu-list li {
     padding: 10px;
 }
 
-nav{
+nav {
     height: 30px;
-
 }
 
-
-
-
-@media (max-width: 768px) {
-     nav {
-        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
-  
-     }
-
-      .menu {
-  display: none;
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 10px; /* Adjusted for better positioning */
     }
 
     .mobile-menu {
@@ -107,8 +93,21 @@ nav{
 
     .mobile-menu-list {
         display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        width: 60%; /* Adjust width as needed */
+        padding: 20px;
+        border-right: 1px solid #ccc;
+        z-index: 1000;
+        flex-direction: column;
+        transition: width 2s;
     }
-    
+
+    .mobile-menu-list li {
+        display: block;
+        margin-bottom: 10px; /* Adjust spacing between items */
+    }
 }
-
-
