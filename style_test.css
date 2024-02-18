@@ -88,13 +88,11 @@ nav{
 
 }
 
-/*@media (max-width: 768px) {*/
-  @media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
      nav {
         background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
   
      }
-
 
       .menu {
   display: none;
@@ -107,8 +105,25 @@ nav{
     .mobile-menu-list {
         display: block;
     }
-
-
     
 }
 
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; 
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto;  
+    }
+}
