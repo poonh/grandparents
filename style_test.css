@@ -88,16 +88,33 @@ nav{
 
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {*/
+  @media only screen and (max-width: 768px) {
      nav {
         background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
   
      }
+/*additional*/
+   .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
 
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
 
-     
-    .menu {
-        display: none;
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+
+     /*   .menu {
+  display: none;
     }
 
     .mobile-menu {
@@ -107,4 +124,6 @@ nav{
     .mobile-menu-list {
         display: block;
     }
+*/
 }
+
