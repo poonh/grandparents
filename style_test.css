@@ -94,6 +94,20 @@ nav{
         background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
   
      }
+
+
+      .menu {
+  display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-list {
+        display: block;
+    }
+
 /*additional*/
    .menu-icon {
         display: inline-block;
@@ -112,18 +126,6 @@ nav{
         margin-right: auto; /* Pushes 目錄 to the far left */
         margin-left: 10px; /* Adjust margin as needed */
     }
-
-     /*   .menu {
-  display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .mobile-menu-list {
-        display: block;
-    }
-*/
+    
 }
 
