@@ -104,11 +104,12 @@ nav{
 
 
  .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
+                   margin-right: auto;   /* Adjust margin as needed */
         }
 .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
+        display: inline-block;
+        margin-left: 280px; 
+        cursor: pointer;
         }
 
 @media (max-width: 768px) {
