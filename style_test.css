@@ -1,80 +1,58 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('pictures/lightgreen.jpg');
-    background-size: cover;
+/* Add your custom styles here */
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Adjusted to center items horizontally */
-    padding: 10px;
- /*   max-width: 768px*/
-}
-
-
-
-.text-right {
-            text-align: right;
-        }
-/* Removed the .logo styles */
-
-header {
-    background-image: url('pictures/lightgreen.jpg'); /* Apply the same background image */
-    background-color: #333; /* Fallback color */
-    color: #000;
-}
-}
-
-nav ul, .mobile-menu-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  
-}
-
-nav ul li, .mobile-menu-list li {
-    display: inline;
-    margin-right: 20px;
-   
-}
-
-nav ul li a, .mobile-menu-list li a {
-    color: #000; /* Set the color to black */
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-
-}
-
-main {
+.mobile-menu-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust as needed */
     padding: 20px;
-    max-width: 600px; /* Set a maximum width for the main content */
-    margin: 0 auto;
-    margin-top: 0px
+    border-right: 1px solid #ccc; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    flex-direction: column; /* Display items vertically */
+    transition: width 2s;
 }
 
-footer {
-    /* Removed the footer styles */
+.mobile-menu-list.active {
+    display: block;
 }
 
-/* Mobile menu styles */
-
-
-
-
-
-nav{
-    height: 30px;
-
+.menu-title {
+    margin-right: auto; /* Pushes 目錄 to the far left */
+    margin-left: 10px; /* Adjust margin as needed */
 }
 
-@media (max-width: 768px) {
-     nav {
-        background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
-  
-     }
+.mobile-menu {
+    display: none;
+}
 
+.menu-icon {
+    margin-right: 10px; /* Adjust margin as needed */
+    cursor: pointer;
+}
+
+.mobile-menu-list li {
+    display: block; /* Display list items vertically */
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
 }
