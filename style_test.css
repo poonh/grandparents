@@ -97,11 +97,16 @@ nav{
 
      
     .menu {
-        display: none;
+     display: none;
+
     }
 
     .mobile-menu {
-        display: block;
+	/*       display: block;*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
     }
 
     .mobile-menu-list {
