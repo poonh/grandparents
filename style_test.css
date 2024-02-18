@@ -65,6 +65,10 @@ footer {
     display: none;
 }
 
+.mobile-menu-list.active {
+            display: block;
+}
+
 .menu-icon {
     width: 30px;
     height: 30px;
@@ -74,13 +78,23 @@ footer {
 }
 
 .mobile-menu-list {
-    display: none;
-/*    background-color: lightgreen;*/
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
     background-image: url('pictures/lightgreen.jpg')
 }
 
 .mobile-menu-list li {
-    padding: 10px;
+    display: block
 }
 
 nav{
@@ -88,32 +102,29 @@ nav{
 
 }
 
-@media only screen and (max-width: 768px) {
+
+ .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+.menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+@media (max-width: 768px) {
      nav {
         background-image: url('pictures/lightgreen.jpg'); /* Set the background image */
   
      }
 
-    .menu-icon {
-        display: inline-block;
- /*       margin-left: 280px; */
-        cursor: pointer;
-    }
 
-     .menu-title {
-        margin-right: auto;  
-    }
+     
     .menu {
-     display: none;
-
+        display: none;
     }
 
     .mobile-menu {
-	display: block;
-/*        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;*/
+        display: block;
     }
 
     .mobile-menu-list {
