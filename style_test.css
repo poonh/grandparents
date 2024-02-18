@@ -102,11 +102,11 @@ nav{
     }
 
     .mobile-menu {
-	/*       display: block;*/
-        display: flex;
+	display: block;
+/*        display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 10px;
+        margin-right: 10px;*/
     }
 
     .mobile-menu-list {
